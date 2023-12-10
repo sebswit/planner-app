@@ -1,14 +1,67 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.time-block {
+    width: calc(100% / 12);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
 .hour-display{
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     margin: 0px;
+    border: 1px solid black;
     padding: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
     text-align: center;
     background-color: orange;
 }
+.description{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;  
+    border: 1px solid black;
+    padding: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;    
+    background-color: white;
+}
 .past{
     background-color: #c18080;
+}
+.future{
+    background-color: #80c1c1;
+}
+.present{
+    background-color: #80c180;
+}
+.saveBtn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0px;
+    border: 1px solid black;
+    padding: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    background-color: orange; 
+    
 }

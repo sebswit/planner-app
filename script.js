@@ -15,16 +15,21 @@ $(document).ready(function () {
     
 
     //check if time block is in the past, present or future
-    for (var i = 0; i < timeBlock.length; i++) {
-        
-        if (dayjs().hour() > hour[i].value) {
-            textArea[i].classList.add("past");
-        } else if (dayjs().hour() < hour[i].value) {
-            textArea[i].classList.add("future");
-        } else {
-            textArea[i].classList.add("present");
-        }
+    var currentHour = dayjs().hour();
+
+for (var i = 0; i < timeBlock.length; i++) {
+    var blockHour = parseInt(hour.eq(i).text().trim());
+
+    if (currentHour > blockHour) {
+        textArea.eq(i).addClass("past");
+    } else if (currentHour < blockHour) {
+        textArea.eq(i).addClass("future");
+    } else {
+        textArea.eq(i).addClass("present");
     }
+}
+
+    
     //load saved events from local storage
     var savedEvents = JSON.parse(localStorage.getItem("events"));
     if (savedEvents !== null) {
@@ -43,12 +48,12 @@ $(document).ready(function () {
     //Save button click event
     $(".saveBtn").on("click", function () {
         var text = $(this).siblings(".description").val();
-        var time = $(this).parent().attr("id");
-        localStorage.setItem(time, text);
+        
     });
 
 
 }); 
+
 
 
 
