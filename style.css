@@ -12,15 +12,6 @@ header {
     padding: 10px;
 }
 
-
-
-.time-block {
-    width: calc(100% / 12);
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
 .hour-display{
     font-size: 20px;
     font-weight: bold;
@@ -29,7 +20,7 @@ header {
     border: 1px solid black;
     padding: 0px;
     margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 1px;    
     text-align: center;
     background-color: orange;
 }
@@ -44,13 +35,13 @@ header {
     background-color: white;
 }
 .past{
-    background-color: #c18080;
+    background-color: #bc4e4e;
 }
 .future{
-    background-color: #80c1c1;
+    background-color: #4dc15e;
 }
 .present{
-    background-color: #80c180;
+    background-color: #80b7c1;
 }
 .saveBtn {
     font-size: 20px;

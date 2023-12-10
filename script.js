@@ -6,8 +6,8 @@ $(document).ready(function () {
     $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY [at] hh:mm A"));
 
 
-    //Create time blocks
-    var timeBlock = $(".time-block");
+    //Create varaibles for time blocks, hours, text area and save button
+    var timeBlock = $(".block");
     var hour = $(".hour-display");
     var textArea = $(".description");
     var saveBtn = $(".saveBtn");
@@ -47,8 +47,7 @@ for (var i = 0; i < timeBlock.length; i++) {
     });
     //Save button click event
     $(".saveBtn").on("click", function () {
-        var text = $(this).siblings(".description").val();
-        
+        $(this).siblings(".description").val();
     });
 
 
