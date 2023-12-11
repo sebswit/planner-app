@@ -6,10 +6,14 @@ body {
 }
 
 header {
-    background-color: #4caf50;
-    color: white;
+    background-color: rgb(243, 241, 237);
+    margin-bottom: 75px;
+    color: black;
     text-align: center;
     padding: 10px;
+    border-bottom: 5px solid black;
+    
+    
 }
 
 .hour-display{
@@ -22,26 +26,27 @@ header {
     margin-top: 1px;
     margin-bottom: 1px;    
     text-align: center;
-    background-color: orange;
+    background-color: white;
 }
 .description{
+
     font-size: 20px;
     font-weight: bold;
     color: #000000;  
     border: 1px solid black;
-    padding: 0px;
+    padding: 0;
     margin-top: 1px;
     margin-bottom: 1px;    
     background-color: white;
 }
 .past{
-    background-color: #bc4e4e;
+    background-color: lightgray;
 }
 .future{
-    background-color: #4dc15e;
+    background-color: lightgreen;
 }
 .present{
-    background-color: #80b7c1;
+    background-color: lightcoral;
 }
 .saveBtn {
     font-size: 20px;
@@ -53,6 +58,6 @@ header {
     margin-top: 1px;
     margin-bottom: 1px;
     text-align: center;
-    background-color: orange; 
+    background-color: skyblue; 
     
 }
